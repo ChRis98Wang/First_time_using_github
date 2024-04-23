@@ -11,9 +11,13 @@ int whileloop(int n ){
         return res;
         
     }
+int forloop(int n)
+{
+    return 0;
+}
 int main(){
     std::cout<<whileloop(4)<<std::endl;
-    
+
     std::cout<<"hello github"<<std::endl;
     return 0;
 }
