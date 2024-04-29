@@ -1,4 +1,4 @@
-#include<iostream>
+#include"hello.h"
 //begin Hello Algo
 int whileloop(int n ){
         int res = 0;
@@ -18,6 +18,6 @@ int forloop(int n)
 int main(){
     std::cout<<whileloop(4)<<std::endl;
 
-    std::cout<<"hello github"<<std::endl;
+    output();
     return 0;
 }
