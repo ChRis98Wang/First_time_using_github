@@ -1,7 +1,17 @@
 // this is a head file using some easy class of function 
 #include <iostream>
-void output()
+int recursion(int n )
 {
-    std::cout<<"get some thing output"<<std::endl;
+    
+  
+    if(n<2){
+        return n;
 
+    }
+    
+    else{
+        return recursion(n-2)+recursion(n-1);
+    }
+
+    
 }

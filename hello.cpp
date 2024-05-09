@@ -1,5 +1,15 @@
 #include"hello.h"
+#include"tailrecur.h"
 //begin Hello Algo
+struct Student{
+    int age;
+    char* name;
+};
+void getinfo(struct Student & A)
+{
+    std::cout<<A.name<<" "<<A.age<<std::endl;
+}
+
 int whileloop(int n ){
         int res = 0;
         int i = 1;
@@ -17,8 +27,13 @@ int forloop(int n)
 }
 int main(){
     std::cout<<whileloop(4)<<std::endl;
-//try a head function 
-
-    output();
+    for (int i =1;i<10;i++)
+    {
+        std::cout<<recursion(i)<<" ";
+    }
+    std::cout<<"-----------------------------"<<std::endl;
+    for(int i =0 ;i<10;i++){
+    std::cout<<tailrecur(i,0)<<std::endl;
+    }
     return 0;
 }
