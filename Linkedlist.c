@@ -113,6 +113,22 @@ int main(){
     ListNode* target=Listlinkedget(&list,1);
     printf("%d",target->data);
     free(node);
+    int n,m;
+    while(scanf("%d,%d",&n,&m)!=EOF){
+        if(!n&&!m){
+            break;
+        }
+        Listlinked l;
+        ListLinkedcreate(&l);
+        for(int i =0;i<n;i++)
+        {
+            int x;
+            scanf("%d",&x);
+            Listlinkedinsert(&l,i,x);
+            
+        }
+    }
+
     /*
     ListlinkedDelete(&list,0);
      ListNode* temp=list.head;
@@ -127,6 +143,6 @@ int main(){
     while(t--){
         printf("this is the %d th ",t);
     }*/
-    ;
+    return 0 ;
     }
 
